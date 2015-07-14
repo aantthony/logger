@@ -7,7 +7,7 @@ var hostname = require('os').hostname();
 var pid      = process.pid;
 
 var emitter = new EventEmitter();
-var _console = new Console(process.stdout);
+var _console = new Console(process.stderr);
 
 module.exports = factory;
 
