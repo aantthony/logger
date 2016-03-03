@@ -34,7 +34,7 @@ function LoggingContext(componentName) {
   this._name = componentName;
 }
 
-LoggingContext.prototype.chalk = require('chalk');
+LoggingContext.prototype.chalk = require('./chalk');
 
 LoggingContext.prototype._write = function (level, message, data) {
   var payload = {
